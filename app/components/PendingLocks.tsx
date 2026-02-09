@@ -340,7 +340,7 @@ export function PendingLocks({ onSelectLock }: { onSelectLock: (id: string) => v
             <ul className="list-disc list-inside space-y-1">
               <li>These are love locks that have been sent to you by others</li>
               <li>You can <strong>Accept</strong> them to lock them forever on the bridge</li>
-              <li>You can <strong>Decline</strong> them to return the payment to the sender</li>
+              <li>You can <strong>Decline</strong> them if you don't want it forever on the blockchain</li>
               <li>Once you respond, the lock will either be permanently locked or destroyed</li>
               <li>Only you (the recipient) can accept or decline these locks</li>
             </ul>

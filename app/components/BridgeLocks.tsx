@@ -364,7 +364,7 @@ export function BridgeLocks({ onSelectLock }: { onSelectLock: (id: string) => vo
             <h3 className="font-semibold mb-2 love-lock-text">About Bridge Locks:</h3>
             <ul className="list-disc list-inside space-y-1">
               <li>Only locks that have been <strong>accepted</strong> are stored on the bridge</li>
-              <li>Declined locks are destroyed and payments are returned</li>
+              <li>Declined locks are destroyed and payments are not returned</li>
               <li>Accepted locks are permanently locked and cannot be modified</li>
               <li>All payments from accepted locks go to the bridge master</li>
               <li>If no locks appear, it means no love locks have been accepted yet</li>

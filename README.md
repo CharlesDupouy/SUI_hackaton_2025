@@ -46,14 +46,14 @@ pnpm start
 - Create personalized love locks with custom messages
 - Set creation dates for special occasions
 - Send locks to any Sui address
-- Pay 0.00039 SUI (390 MIST) to create a lock
-- Payment is refunded if recipient declines
+- Pay 0.39 SUI (390 000 MIST) to create a lock
+- Payment is not refunded if recipient declines
 
 #### 2. **Accept/Decline Locks**
 - Recipients receive love locks in their wallet
 - View lock details including creator, message, and date
 - Accept to permanently lock on the bridge (payment goes to bridge master)
-- Decline to destroy the lock and refund the creator
+- Decline to destroy the lock
 
 #### 3. **Search & Discovery**
 - Search for existing love locks by Object ID
@@ -86,12 +86,12 @@ pnpm start
 ## 💰 Business Model
 
 ### Payment System
-- **Lock Creation Cost**: 0.00039 SUI (390 MIST) per love lock
+- **Lock Creation Cost**: 0.39 SUI (390 000 MIST) per love lock
 - **Payment Flow**:
   1. Creator pays the lock price when creating a lock
   2. Payment is held in escrow within the lock object
   3. If recipient **accepts**: Payment goes to the bridge master (revenue)
-  4. If recipient **declines**: Payment is returned to the creator (refund)
+  4. If recipient **declines**: Payment is not returned to the creator
 
 ### Revenue Model
 - **Bridge Master**: Receives all payments from accepted love locks
@@ -100,8 +100,8 @@ pnpm start
 - **Decentralized**: No central authority controls the bridge or payments
 
 ### Economic Incentives
-- **Creators**: Pay upfront but get refunded if declined
-- **Recipients**: Can accept (locking forever) or decline (refunding creator)
+- **Creators**: Pay upfront
+- **Recipients**: Can accept (locking forever) or decline 
 - **Bridge Master**: Earns from all accepted locks
 - **Network**: Benefits from transaction fees and storage
 
@@ -145,7 +145,6 @@ EXAMPLE_LOCK_IDS = [
 ## 🔒 Security Features
 
 - **Immutable Locks**: Once accepted, locks cannot be modified
-- **Payment Protection**: Automatic refunds for declined locks
 - **Address Validation**: Proper Sui address format checking
 - **Transaction Verification**: Blockchain confirmation for all operations
 - **No Central Control**: Fully decentralized operation
@@ -155,7 +154,7 @@ EXAMPLE_LOCK_IDS = [
 1. **Connect Wallet**: Use any Sui-compatible wallet
 2. **Create Lock**: Fill in recipient address, message, and date
 3. **Send Lock**: Pay the creation fee and send to recipient
-4. **Recipient Response**: Recipient can accept (permanent) or decline (refund)
+4. **Recipient Response**: Recipient can accept (permanent) or decline
 5. **View Results**: Search for locks or view the bridge visualization
 
 ## 🛠️ Development

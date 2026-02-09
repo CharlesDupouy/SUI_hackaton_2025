@@ -76,7 +76,7 @@ export function CreateLock({
       <CardHeader>
         <CardTitle className="love-lock-text">Create New Love Lock</CardTitle>
         <CardDescription className="love-lock-text-muted">
-          Create a love lock that will be sent to someone special. They can choose to accept it (locking it forever) or decline it (returning your payment).
+          Create a love lock that will be sent to someone special. They can choose to accept it (locking it forever) or decline it.
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
